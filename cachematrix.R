@@ -23,6 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## cacheSolve function looks for inverse of input matrix and if it is available in cache, it retrieves that
 ## if inverse of given matrix is not available in cache, it calculates inverse using solve() and then stores it in cache.
 
+## x is input matrix which is a square and invertible matrix
+
 cacheSolve <- function(x, ...) {
         
         m <- x$getInverse()
